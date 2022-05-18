@@ -81,4 +81,6 @@ docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site content:/usr
  
 ## Resultado
 
+![navegar página personalizada]()
+
 </div>
