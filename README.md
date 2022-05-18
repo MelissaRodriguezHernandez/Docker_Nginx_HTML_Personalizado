@@ -45,7 +45,7 @@ docker stop web
 > Para continuar debemos tener en cuenta una serie de cosas. Por defecto, Nginx busca en el directorio `/usr/share/nginx/html` dentro del contenedor, por lo tanto necesitaremos necesitaremos tener nuestros archivos de la página que queremos mostrar en ese directorio.
 Para lograr este objetivo deberemos montar un volúmen, para luego vincularlo a un directorio en nuestra máquina local y asignar ese mismo directorio al contenedor que se ejecutara.
 
-Primero crearemos nuestro directorio en local y le añadiremos el archivo con nuestro html
+Primero crearemos nuestro directorio en local dentro de `Documentos` y le añadiremos el archivo con nuestro html
 
 ```
 mkdir -p /nginx/site-content/
