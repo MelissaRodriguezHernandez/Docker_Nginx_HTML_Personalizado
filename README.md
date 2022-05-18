@@ -72,7 +72,7 @@ nano index.html
 A continuación ejecutaremos el siguiente comando para crear un volumen y a la vez montar nuestro directorio local en el contener en ejecución de nginx (como ya hemos comentado antes)
 
 ```
-docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site content:/usr/share/nginx/html nginx
+docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site-content:/usr/share/nginx/html nginx
   ```
   
 </div>
