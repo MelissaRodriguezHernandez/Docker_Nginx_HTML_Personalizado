@@ -2,7 +2,7 @@
 
 > En esta práctica desplegaremos un HTML sobre el servidor web Nginx que a su vez esta ejecutandose en Docker
 
-Indíce
+## Indíce
 
 1. [Instalación Nginx en Docker](#1)
 2. [Agregación de HTML personalizado](#2)
@@ -81,6 +81,6 @@ docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site-content:/usr
  
 ## Resultado
 
-![navegar página personalizada]()
+![navegar página personalizada](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/pagina.png)
 
 </div>
