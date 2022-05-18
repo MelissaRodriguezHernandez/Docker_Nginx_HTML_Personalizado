@@ -26,7 +26,7 @@ docker run --rm -d -p 8080:80 --name web nginx
 
 Si abrimos nuestro navegador en el localhost deberia salir algo así:
 
-![imagen wen nginx localhost](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/nginx%20welcome.png)
+![imagen wen nginx localhost](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/navegador%20nginx.png)
 
 Esta sería la página por defecto del Nginx. Ahora ya tenemos las bases para continuar, y hacer una personalizada nuestra.
   
@@ -54,7 +54,7 @@ mkdir -p /nginx/site-content/
 ```
 nano index.html
 ```
-![contenido html personalizado](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/index.png)
+![contenido html personalizado](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/pagina%20personalizada.png)
  
 ```html
 <!doctype html>
@@ -81,6 +81,6 @@ docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site-content:/usr
  
 ## Resultado
 
-![navegar página personalizada](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/pagina.png)
+![navegar página personalizada](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/navegador%20pagina.png)
 
 </div>
