@@ -48,7 +48,7 @@ Para lograr este objetivo deberemos montar un volúmen, para luego vincularlo a 
 Primero crearemos nuestro directorio en local y le añadiremos el archivo con nuestro html
 
 ```
-mkdir -p /Documentos/nginx/site-content/
+mkdir -p /nginx/site-content/
 ```
 
 ```
