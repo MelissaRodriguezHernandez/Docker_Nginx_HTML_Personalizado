@@ -11,6 +11,14 @@ Indíce
 
 ## Instalación de Nginx en Docker
   
+Para empezar buscaremos la imegen en DockerHub y la ejecutaremos para tener la imagen guardada en nuestro docker: [enlace](https://hub.docker.com/_/nginx)
+
+```
+pull nginx
+```
+  
+  
+  
 </div>
 
 <div id="2">
