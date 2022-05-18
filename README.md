@@ -6,7 +6,7 @@
 
 1. [Instalación Nginx en Docker](#1)
 2. [Agregación de HTML personalizado](#2)
-3. [Resultado](#3)
+3. [Creación de imagen personalizada](#3)
 
 <div id="1">
 
@@ -74,13 +74,46 @@ A continuación ejecutaremos el siguiente comando para crear un volumen y a la v
 ```
 docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site-content:/usr/share/nginx/html nginx
   ```
+
+Abrimos nuestro navegar en `localhost:8080`
+
+![navegar página personalizada](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/navegador%20pagina.png)
   
 </div>
 
 <div id="3">
  
-## Resultado
+## Creación de imagen personalizada
 
-![navegar página personalizada](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/navegador%20pagina.png)
+Para crear nuestra imagen personalizada deberemos crear un `Dockerfile`, el cual crearemos en el directorio `./Documentos/nginx/`.
+  
+```
+nano Dockerfile
+  ```
+Dentro de este archivo introduciremos el siguiente contenido
 
+```
+FROM nginx:latest
+COPY ./site-content/index.html /usr/share/nginx/html/index.html
+  ```
+![imagen contenido Dockerfile]()  
+
+A continuación, copiamos nuestro archivo `index.html` situado en el directorio `./Documentos/nginx/site-content/` en el directorio `./usr/share/nginx/html/`.
+
+```
+cp index.html ./usr/share/nginx/html/
+  ```
+Para construir nuestra imagen deberemos ejecutar el siguiente comando
+
+```
+docker build -t webserver .
+  ```
+En la terminal debería salir algo así:
+ 
+![terminal build server]()
+
+Finalmente iniciamos nuestro contenedor
+
+![navegador contenedor]()
+  
 </div>
