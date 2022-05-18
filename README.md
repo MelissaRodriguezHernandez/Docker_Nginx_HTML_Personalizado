@@ -6,6 +6,7 @@ Indíce
 
 1. [Instalación Nginx en Docker](#1)
 2. [Agregación de HTML personalizado](#2)
+3. [Resultado](#3)
 
 <div id="1">
 
@@ -25,7 +26,7 @@ docker run --rm -d -p 8080:80 --name web nginx
 
 Si abrimos nuestro navegador en el localhost deberia salir algo así:
 
-![imagen wen nginx localhost]()
+![imagen wen nginx localhost](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/nginx%20welcome.png)
 
 Esta sería la página por defecto del Nginx. Ahora ya tenemos las bases para continuar, y hacer una personalizada nuestra.
   
@@ -53,16 +54,31 @@ mkdir -p /Documentos/nginx/site-content/
 ```
 nano index.html
 ```
-![contenido html personalizado]()
-
-*el código html usado actual esta en la carpeta src de este repositorio*
+![contenido html personalizado](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/index.png)
+ 
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Docker Nginx</title>
+</head>
+<body>
+  <h2>Melissa Rodriguez Hernandez</h2>
+</body>
+</html>
+  ```
 
 A continuación ejecutaremos el siguiente comando para crear un volumen y a la vez montar nuestro directorio local en el contener en ejecución de nginx (como ya hemos comentado antes)
 
 ```
 docker run --rm -d -p 8080:80 --name web -v ~/Documentos/nginx/site content:/usr/share/nginx/html nginx
   ```
-
   
 </div>
 
+<div id="3">
+ 
+## Resultado
+
+</div>
