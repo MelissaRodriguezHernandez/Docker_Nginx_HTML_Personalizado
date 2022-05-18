@@ -7,6 +7,7 @@
 1. [Instalación Nginx en Docker](#1)
 2. [Agregación de HTML personalizado](#2)
 3. [Creación de imagen personalizada](#3)
+4. [Resursos](#4)
 
 <div id="1">
 
@@ -96,7 +97,7 @@ Dentro de este archivo introduciremos el siguiente contenido
 FROM nginx:latest
 COPY ./site-content/index.html /usr/share/nginx/html/index.html
   ```
-![imagen contenido Dockerfile]()  
+![imagen contenido Dockerfile](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/Dockerfile%20contenido.png)  
 
 A continuación, copiamos nuestro archivo `index.html` situado en el directorio `./Documentos/nginx/site-content/` en el directorio `./usr/share/nginx/html/`.
 
@@ -110,10 +111,17 @@ docker build -t webserver .
   ```
 En la terminal debería salir algo así:
  
-![terminal build server]()
+![terminal build server](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/build.png)
 
 Finalmente iniciamos nuestro contenedor
 
-![navegador contenedor]()
+![navegador contenedor](https://github.com/MelissaRodriguezHernandez/Docker_Nginx_HTML_Personalizado/blob/main/img/navegador%20contenedor.png)
   
 </div>
+
+<div id="4">
+  
+## Recursos
+
+[Link]()
+  </div>
